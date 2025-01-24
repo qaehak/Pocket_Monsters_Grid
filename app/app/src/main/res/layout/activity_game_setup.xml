@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Screen setup-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--Background Screen setup-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/instructionpage"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <!--Title setup-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:src="@drawable/setup"/>
+        <!--Player 1 Information-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/player1"
+            android:layout_margin="10dp"
+            android:layout_gravity="left"/>
+        <!--Player 1 Information: Name-->
+        <EditText
+            android:id="@+id/player1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Player 1: Name"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:layout_margin="10dp"/>
+        <!--Player 1 Information: Pokemon Choice-->
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffff00"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"/>
+        <!--Player 2 Information:-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/player2"
+            android:layout_margin="10dp"
+            android:layout_gravity="left"/>
+        <!--Player 2 Information: Name-->
+        <EditText
+            android:id="@+id/player2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Player 2: Name"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:layout_margin="10dp"/>
+        <!--Player 2 Information: Pokemon Choice-->
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffff00"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"/>
+        <!--Generates random arena background in game screen-->
+        <ImageView
+            android:onClick="arena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arena"
+            android:layout_margin="10dp"/>
+        <!--Empty space to hold arena-->
+        <ImageView
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty"
+            android:layout_margin="10dp"/>
+        <!--Game Button to begin Tic-Tac-Toe battle-->
+        <ImageView
+            android:onClick="playGameScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/playgame"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

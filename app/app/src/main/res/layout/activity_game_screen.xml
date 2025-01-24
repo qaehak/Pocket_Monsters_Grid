@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Screen setup-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--Background Screen setup-->
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--Reset and Home Button Setup-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="right">
+            <ImageView
+                android:id="@+id/home"
+                android:onClick="home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@drawable/home" />
+            <ImageView
+                android:id="@+id/reset"
+                android:onClick="reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@drawable/reset" />
+        </LinearLayout>
+        <!--Title setup-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/battle"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"/>
+        <!--Game Grid-->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="3"
+            android:rowCount="3">
+            <ImageView
+                android:id="@+id/a"
+                android:onClick="aClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main"/>
+            <ImageView
+                android:id="@+id/b"
+                android:onClick="bClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main"/>
+            <ImageView
+                android:id="@+id/c"
+                android:onClick="cClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main"/>
+            <ImageView
+                android:id="@+id/d"
+                android:onClick="dClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main"/>
+            <ImageView
+                android:id="@+id/e"
+                android:onClick="eClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main"/>
+            <ImageView
+                android:id="@+id/f"
+                android:onClick="fClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main"/>
+            <ImageView
+                android:id="@+id/g"
+                android:onClick="gClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main"/>
+            <ImageView
+                android:id="@+id/h"
+                android:onClick="hClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main"/>
+            <ImageView
+                android:id="@+id/i"
+                android:onClick="iClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main"/>
+        </GridLayout>
+        <!--Turn and Undo Button setup-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/turn"
+                android:layout_margin="5dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/turn"
+                android:src="@drawable/x" />
+            <ImageView
+                android:onClick="undo"
+                android:id="@+id/undo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/undo"
+                android:clickable="true"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
