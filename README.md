@@ -1,5 +1,5 @@
 # Poke-Tac-Toe
-A Pokemon Tic-Tac-Toe game inspired by the Gobblet Gobblers games. Each pokemon can evovle to higher stages and overtake pieces. Similar to a traditional game, the first player to align three pieces wins. This app was coded on Android Studio. 
+A Pocket Monsters Tic-Tac-Toe game inspired by the Gobblet Gobblers board game. Each monster can evovle to higher stages and overtake pieces. Similar to a traditional tic-tac-toe game, the first player to align three pieces in a row wins. This app was coded on Android Studio. 
 
 ## Features
 - Reset Button
